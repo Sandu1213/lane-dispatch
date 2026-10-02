@@ -1,0 +1,13 @@
+{
+  "name": "lane-dispatch",
+  "description": "Orchestrate coding work as lanes in git worktrees and herdr workspaces: you plan and verify, executor agents (claude / codex / omp / pi / grok) implement, disk events wake you, acceptance checks and a codex review gate every lane",
+  "version": "0.5.0",
+  "author": {
+    "name": "Duke",
+    "url": "https://github.com/Sandu1213"
+  },
+  "homepage": "https://github.com/Sandu1213/lane-dispatch",
+  "repository": "https://github.com/Sandu1213/lane-dispatch",
+  "license": "MIT",
+  "keywords": ["herdr", "orchestrator", "worktree", "agents", "codex", "claude-code", "omp"]
+}

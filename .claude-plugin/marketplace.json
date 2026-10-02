@@ -1,0 +1,15 @@
+{
+  "name": "lane-dispatch",
+  "description": "lane-dispatch: herdr lane orchestrator skills for Claude Code and omp",
+  "owner": {
+    "name": "Duke",
+    "url": "https://github.com/Sandu1213"
+  },
+  "plugins": [
+    {
+      "name": "lane-dispatch",
+      "source": "./",
+      "description": "Split work into lanes (branch + worktree + herdr workspace), run claude / codex / omp / pi / grok executors in them, verify, review with codex and publish"
+    }
+  ]
+}

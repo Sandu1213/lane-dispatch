@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "summary", "checklist", "checks", "commits", "blockers", "deviations"],
+  "properties": {
+    "status": { "type": "string", "enum": ["done", "partial", "blocked"] },
+    "summary": { "type": "string" },
+    "checklist": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["item", "done"],
+        "properties": { "item": { "type": "string" }, "done": { "type": "boolean" } }
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["cmd", "exit"],
+        "properties": { "cmd": { "type": "string" }, "exit": { "type": "integer" } }
+      }
+    },
+    "commits": { "type": "array", "items": { "type": "string" } },
+    "blockers": { "type": "array", "items": { "type": "string" } },
+    "deviations": { "type": "array", "items": { "type": "string" } }
+  }
+}
